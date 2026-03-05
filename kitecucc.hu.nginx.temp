@@ -1,0 +1,27 @@
+# KiteCucc Nginx Configuration - TEMPORARY (HTTP only for cert setup)
+
+# HTTP Server for Let's Encrypt validation
+server {
+    listen 80;
+    listen [::]:80;
+    server_name kitecucc.hu www.kitecucc.hu;
+
+    # Root directory
+    root /home/stefler/kitecucc;
+    index index.html;
+
+    # Allow Let's Encrypt verification
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    # Serve website on HTTP for now
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Disable access to dotfiles
+    location ~ /\. {
+        deny all;
+    }
+}

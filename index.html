@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Királyi Márton">
+  <meta name="copyright" content="© 2026 Királyi Márton">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="keywords" content="matematika oktatás Budapest, matematika korrepetálás, fizika oktatás, kémia oktatás, érettségi felkészülés, felvételi felkészülés, magántanár, ELTE matematika, XI. kerület, privát órák, heti órák, intenzív tanulás">
+  <title>Matematika Oktatás Budapest | Királyi Márton Korrepetálás</title>
+  <meta name="description" content="Kérkezes matematika, fizika és kémia oktatás Budapesten (XI. kerület). 8 év tapasztalat. Érettségi és felvételi felkészülés. ELTE matematika szak végzett. Alkalmi órák és heti rendszeres oktatás.">
+  <meta property="og:title" content="Matematika Oktatás Budapest - Királyi Márton Korrepetálás">
+  <meta property="og:description" content="8 év tapasztalattal rendelkező magántaná r. Matematika, fizika, kémia oktatás. Érettségi felkészülés. Budapest XI. kerület.">
+  <meta property="og:image" content="matektanár.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:site_name" content="Királyi Márton - Matematika Oktatás">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Matematika Oktatás Budapest - Királyi Márton">
+  <meta name="twitter:description" content="Magántanári korrepetálás. Matematika, fizika, kémia oktatás Budapest XI. kerületben.">
+  <link rel="canonical" href="http://localhost:8000/">
+  <link rel="icon" type="image/png" href="matektanár.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Királyi Márton - Matematika Oktatás",
+    "description": "Matematika, fizika és kémia korrepetálás Budapesten. Érettségi és felvételi felkészülés.",
+    "image": "matektanár.png",
+    "telephone": "+36706029845",
+    "email": "kiraly.marton.tutor@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Budapest",
+      "addressRegion": "XI. kerület",
+      "addressCountry": "HU"
+    },
+    "priceRange": "$$",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "#kapcsolat"
+      }
+    },
+    "areaServed": "Budapest",
+    "knowsAbout": [
+      "Matematika oktatás",
+      "Fizika oktatás",
+      "Kémia oktatás",
+      "Érettségi felkészülés",
+      "Felvételi felkészülés",
+      "Korrepetálás"
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Királyi Márton - Matematika Oktatás",
+    "url": "http://localhost:8000/",
+    "logo": "matektanár.png",
+    "description": "Személyre szabott matematika, fizika és kémia oktatás magántanári keretek között",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+36706029845",
+      "email": "kiraly.marton.tutor@gmail.com"
+    },
+    "educator": {
+      "@type": "Person",
+      "name": "Királyi Márton",
+      "jobTitle": "Matematika Tanár",
+      "alumniOf": "ELTE - Eötvös Loránd Tudományegyetem",
+      "yearsOfExperience": 8
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-text">Királyi Márton<br><small style="font-size: 0.6em; font-weight: 400;">matematika oktatás</small></span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="#szakmai">Szakmai</a>
+        <a href="#tantargyak">Tantárgyak</a>
+        <a href="#csomagok">Csomagok</a>
+        <a href="#kapcsolat">Kapcsolat</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü megnyitása">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <nav>
+      <a href="#szakmai">Szakmai</a>
+      <a href="#tantargyak">Tantárgyak</a>
+      <a href="#csomagok">Csomagok</a>
+      <a href="#kapcsolat">Kapcsolat</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="mat.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge" data-anim="fade-up">Matematika korrepetálás</div>
+        <h1 data-anim="fade-up" data-delay="100">
+          Matek<br><span class="accent">sikeresen.</span>
+        </h1>
+        <p class="hero-sub" data-anim="fade-up" data-delay="200">
+          8 év tapasztalattal, alsóstól felsősig. Személyes korrepetálás Budapesten, XI. kerületben.
+        </p>
+        <div class="hero-actions" data-anim="fade-up" data-delay="300">
+          <a href="#csomagok" class="btn btn-primary">Csomagok</a>
+          <a href="#kapcsolat" class="btn btn-ghost">Kapcsolat</a>
+        </div>
+      </div>
+      <div class="hero-right" data-anim="fade-up" data-delay="100">
+        <div class="hero-cards">
+          <a href="#csomagok" class="hero-card" onclick="scrollToAlkalmi()">
+            <span class="check-mark">✓</span>
+            <span class="card-text">Alkalmi órák</span>
+          </a>
+          <a href="#csomagok" class="hero-card" onclick="scrollToHetes()">
+            <span class="check-mark">✓</span>
+            <span class="card-text">Heti rendszeres órák</span>
+          </a>
+          <a href="#csomagok" class="hero-card" onclick="scrollToIntenziv()">
+            <span class="check-mark">✓</span>
+            <span class="card-text">Intenzív felkészülés</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" data-anim="fade-up" data-delay="600">
+      <div class="scroll-line"></div>
+      <span>Görgess</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BRAND TICKER / SUBJECTS ═══════════════ -->
+  <section id="tantargyak" class="brands-section">
+    <div class="container">
+      <p class="brands-label" data-anim="fade-up">Tantárgyak</p>
+    </div>
+    <div class="brands-ticker" data-anim="fade-up" data-delay="100">
+      <div class="ticker-track">
+        <div class="ticker-item">📍 Matematika</div>
+        <div class="ticker-item">🔬 Fizika</div>
+        <div class="ticker-item">⚳ Kémia</div>
+        <div class="ticker-item">📍 Matematika</div>
+        <div class="ticker-item">🔬 Fizika</div>
+        <div class="ticker-item">⚳ Kémia</div>
+        <div class="ticker-item">📍 Matematika</div>
+        <div class="ticker-item">🔬 Fizika</div>
+        <div class="ticker-item">⚳ Kémia</div>
+        <div class="ticker-item">📍 Matematika</div>
+        <div class="ticker-item">🔬 Fizika</div>
+        <div class="ticker-item">⚳ Kémia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CSOMAGOK / PACKAGES ═══════════════ -->
+  <section id="csomagok" class="rental-section">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <span class="section-tag">Oktatás</span>
+        <h2>Válassz ki az igényeidnek megfelelő csomagot.</h2>
+      </div>
+
+      <div class="rental-grid">
+        <!-- Card 1 -->
+        <div id="alkalmi-ora" class="rental-card" data-anim="fade-up" data-delay="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 6h24c2.2 0 4 1.8 4 4v28c0 2.2-1.8 4-4 4H12c-2.2 0-4-1.8-4-4V10c0-2.2 1.8-4 4-4z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M16 14h16M16 20h16M16 26h16M16 32h10" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Alkalmi óra</h3>
+          <p>Egyedi óra, szabad időpontban. Teljesen rugalmas és egyszerű oktatás.</p>
+          <ul class="card-features">
+            <li>90 perc oktatás</li>
+            <li>Egyedi érdeklődések szerint tervezve</li>
+            <li>Órán azonnali visszajelzés</li>
+            <li>Felvételi anyagok</li>
+          </ul>
+          <div class="card-footer">
+            <span class="card-label">Egyénre szabás</span>
+            <a href="#kapcsolat" class="btn btn-sm">Érdeklődöm</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="hetes-csomag" class="rental-card" data-anim="fade-up" data-delay="100">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 42c0-6.6 6.3-12 14-12s14 5.4 14 12" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M4 28h40" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Hetes csomag</h3>
+          <p>Hetente egy alkalommal ismétlődő órák. Rendszeres fejlődéshez ideális.</p>
+          <ul class="card-features">
+            <li>Hetente 1x 90 perc</li>
+            <li>Folyamatos követés</li>
+            <li>Havi fejlődési értékelés</li>
+            <li>Szaktanulmányi anyagok</li>
+          </ul>
+          <div class="card-footer">
+            <span class="card-label">Kedvezmény ajánlat</span>
+            <a href="#kapcsolat" class="btn btn-sm">Érdeklődöm</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div id="intenziv-felkeszules" class="rental-card" data-anim="fade-up" data-delay="200">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 12h36c1.1 0 2 .9 2 2v28c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V14c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M18 6c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M14 24h20M14 32h20" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Intenzív felkészülés</h3>
+          <p>Érettségi vagy felvételi vizsgára készüléshez. Gyors és célzott tanulás.</p>
+          <ul class="card-features">
+            <li>Hetente 2x 90 perc</li>
+            <li>Gyakorlófeladatok és mintafeladatok</li>
+            <li>Időhatáron belüli vizsgafelkészítés</li>
+            <li>Teljes vizsgatananyag lefedése</li>
+          </ul>
+          <div class="card-footer">
+            <span class="card-label">Vizsgafelkészítés</span>
+            <a href="#kapcsolat" class="btn btn-sm">Érdeklődöm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SZAKMAI HÁTTÉR ═══════════════ -->
+  <section id="szakmai" class="pickup-section">
+    <div class="container">
+      <div class="pickup-grid">
+        <div class="pickup-info" data-anim="fade-up">
+          <span class="section-tag">Szakmai háttér</span>
+          <h2>8 év tapasztalat oktatásban</h2>
+          <p class="pickup-address">Fazekas (matekos) középsuli, ELTE matematika szak végzett</p>
+          <div class="pickup-details">
+            <div class="pickup-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+              <div>
+                <strong>Tapasztalat</strong>
+                <span>8 év oktatás, alsóstól felsősig</span>
+              </div>
+            </div>
+            <div class="pickup-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Helyszín</strong>
+                <span>Budapest, XI. kerület</span>
+              </div>
+            </div>
+            <div class="pickup-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong>Telefon</strong>
+                <span><a href="tel:+36706029845">+36 70 602 9845</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pickup-info" data-anim="fade-up" data-delay="150">
+          <span class="section-tag">Referenciák</span>
+          <h3>Magasan szakmáit, nagyon emberközpontú</h3>
+          <p>Magas szinvonalú oktatás, amelyet személyes megközelítés jellemez. "Legyél 5-ös!" ez az én mottoóm.</p>
+          <div class="pickup-details" style="margin-top: 2rem;">
+            <div class="pickup-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <div>
+                <strong>Módszer</strong>
+                <span>Személyre szabott tanulási stratégiák</span>
+              </div>
+            </div>
+            <div class="pickup-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <div>
+                <strong>Célok</strong>
+                <span>Jó jegyek és megértés</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ KAPCSOLAT ═══════════════ -->
+  <section id="kapcsolat" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-main" data-anim="fade-up">
+          <span class="section-tag">Kapcsolat</span>
+          <h2>Kezdjük el a tanulást!</h2>
+          <p>Írj egy e-mailt vagy hívj telefonon, hogy megbeszéljük a tanulási tervedet.</p>
+          <div class="contact-links">
+            <a href="mailto:kiraly.marton.tutor@gmail.com" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              kiraly.marton.tutor@gmail.com
+            </a>
+            <a href="tel:+36706029845" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +36 70 602 9845
+            </a>
+          </div>
+        </div>
+        <div class="contact-impresszum" data-anim="fade-up" data-delay="100">
+          <h4>Impresszum</h4>
+          <dl class="impresszum-list">
+            <dt>Név</dt>
+            <dd>Királyi Márton</dd>
+            <dt>Végzettség</dt>
+            <dd>ELTE matematika szak</dd>
+            <dt>Helyszín</dt>
+            <dd>Budapest, XI. kerület</dd>
+            <dt>Tanulási területek</dt>
+            <dd>Matematika, Fizika, Kémia</dd>
+            <dt>Tapasztalat</dt>
+            <dd>8 év oktatás (alsóstól felsősig)</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SEO CONTENT / SERVICES ═══════════════ -->
+  <section style="background: var(--off-white); padding: clamp(5rem, 10vw, 8rem) 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 style="font-family: var(--font-display); font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 700; color: var(--gray-900); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 1rem;">
+          Matematika Oktatás Budapest - Személyre Szabott Korrepetálás
+        </h2>
+        <p style="color: var(--gray-500); font-size: 1rem; max-width: 700px; margin: 0 auto;">
+          Magas szintű matematika, fizika és kémia oktatás az XI. kerületben. Érettségi felkészítés, felvételi felkészítés és rendszeres korrepetálás.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1rem;">
+            Matematika Korrepetálás Budapesten
+          </h3>
+          <p style="color: var(--gray-600); line-height: 1.8;">
+            Kínálok személyre szabott <strong>matematika oktatást</strong> az összes korosztály számára, az alsó tagozattól az érettségiig. A <strong>matematika tanítás</strong> során egyénre szabott feladatokat és tanul­ási módszereket alkalmazok, hogy a diákok igazi megértéshez jussanak. Az <strong>alkalmi órák</strong> tökéletesek azok számára, akik pontosan valamilyen témában szeretnék érzékelni, míg a <strong>heti rendszeres órák</strong> ideálisak a hosszú távú fejlődéshez.
+          </p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1rem;">
+            Érettségi és Felvételi Felkészítés
+          </h3>
+          <p style="color: var(--gray-600); line-height: 1.8;">
+            Az <strong>érettségi felkészítés</strong> és a <strong>felvételi felkészítés</strong> szakért nélkülözik. Az <strong>intenzív felkészülés</strong> programom hetente 2x 90 perces óránkból áll, amely garantálja a vizsgatananyag teljes lefedését. Gyakorlófeladatok, mintavizsgák és részletelt magyarázatok segítségével készíthetünk fel a sikerre.
+          </p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1rem;">
+            Fizika és Kémia Oktatás
+          </h3>
+          <p style="color: var(--gray-600); line-height: 1.8;">
+            A <strong>fizika oktatás</strong> és a <strong>kémia oktatás</strong> szintén kiemelt terület. Ezek az összetett tantárgyak gyakran nehézséget okoznak, de a helyes megközelítéssel és egyénre szabott <strong>magántanári</strong> tanítással könnyebbé válik a megértés. Vizuális demonstrációk, gyakorlati feladatok és interaktív tanulás segítségével érhetőek el az eredmények.
+          </p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1rem;">
+            Miért Válassz Engem?
+          </h3>
+          <p style="color: var(--gray-600); line-height: 1.8;">
+            8 év <strong>oktatási tapasztalat</strong> az alapoktól az emelt szintig. ELTE matematika szak végzett, magasan képzett <strong>tanár</strong>. A Fazekas matematikai középiskolában szerzett tapasztalat garantálja a magas szintű oktatást. Személyes megközelítésem és emberközpontú módszereimmel minden diák elérheti a 5-öst.
+          </p>
+        </div>
+      </div>
+
+      <div style="background: var(--white); padding: 2.5rem; border-radius: 20px; border: 1px solid var(--gray-200);">
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1.5rem;">
+          Gyakori Kérdések a Matematika Oktatásról
+        </h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <h4 style="font-weight: 600; color: var(--gray-800); margin-bottom: 0.75rem;">
+              Milyen szinteken tanítok?
+            </h4>
+            <p style="color: var(--gray-600); font-size: 0.95rem;">
+              Matematika, fizika és kémia oktatást kínálok közoktatási szintekről: általános iskola, alsó tagozat, felső tagozat, középiskola, valamint érettségi szintekh.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-weight: 600; color: var(--gray-800); margin-bottom: 0.75rem;">
+              Hol zajlanak az órák?
+            </h4>
+            <p style="color: var(--gray-600); font-size: 0.95rem;">
+              Az órákat személyesen az XI. kerületben tartom, budapesti helyszínen. Az időpontok rugalmasan egyeztethetők a diák és szülő igényei szerint.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-weight: 600; color: var(--gray-800); margin-bottom: 0.75rem;">
+              Mennyi az óradíj?
+            </h4>
+            <p style="color: var(--gray-600); font-size: 0.95rem;">
+              Az árak személyre szab ott nk az óra típusa és tartama alapján. Az alkalmi órák, heti csomagok és intenzív felkészülés különböző árkategóriákban elérhető.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-weight: 600; color: var(--gray-800); margin-bottom: 0.75rem;">
+              Hogyan foglalok le egy órát?
+            </h4>
+            <p style="color: var(--gray-600); font-size: 0.95rem;">
+              Kattints az \"Érdeklődöm\" gombra, vagy vegyél fel velünk kapcsolatot a telefonszámon vagy e-mailen keresztül. Szívesen megbeszéljük a lehetséges időpontokat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.5); border-radius: 16px; text-align: center;">
+        <p style="color: var(--gray-600); font-size: 0.95rem; line-height: 1.8;">
+          <strong>Kulcsszavak:</strong> matematika oktatás Budapest, matematika korrepetálás, fizika oktatás, kémia oktatás, érettségi felkészítés, felvételi felkészítés, magántanár, alkalmi órák, heti órák, intenzív felkészülés, ELTE matematika, XI. kerület, magatartás tanár, Budapest matematika
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="matektanár.png" alt="Királyi Márton" class="footer-logo">
+        <span>&copy; 2026 Királyi Márton — Matematika Korrepetálás</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.facebook.com/kiraly.marton.tutor" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
